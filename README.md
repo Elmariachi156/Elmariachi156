@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Elmariachi156
+- 👋 Hi, I’m @Elmariachi156(and #=
 - 👀 I’m interested in ...
 - 🌱 I’m currently learning ...
 - 💞️ I’m looking to collaborate on ...
@@ -9,3 +9,4 @@
 Elmariachi156/Elmariachi156 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.l
 
+how do I write on this file
