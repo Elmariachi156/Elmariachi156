@@ -1,13 +1,26 @@
-- 👋 Hi, I’m @Elmariachi156(and #=
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ....
-- ⚡ Fun fact: ...
-  
-<!---
-Elmariachi156/Elmariachi156 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.l
+# In-circuit debugging using openocd and gdb
 
-  h
-        #to =(.=go
+## Hardware
+Connect an ST-Link V2 programmer to the SWD pins on the board. The pins that need to be connected are:
+- GND
+- VTref
+- SWDIO
+- SWCLK
+- NRST
+
+Make sure you're using a genuine one for boards that do not have a 3.3V panda power rail. For example, the tres runs at 1.8V, which is not supported by the clones.
+
+## Openocd
+Install openocd. For Ubuntu 20.04, the one in the package manager works fine: `sudo apt install openocd`.
+
+To run, use `./debug_f4.sh (TODO)` or `./debug_h7.sh` depending on the panda.
+
+## GDB
+You need `gdb-multiarch`.
+
+Once openocd is running, you can connect from gdb as follows:
+```
+$ gdb-multiarch
+(gdb) target ext :3333
+```
+To reset and break, use `monitor reset halt`.
