@@ -1,4 +1,4 @@
-# In-circuit debugging using openocd and gdb
+    # In-circuit debugging using openocd and gdb
 
 ## Hardware
 Connect an ST-Link V2 programmer to the SWD pins on the board. The pins that need to be connected are:
