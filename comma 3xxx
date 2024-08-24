@@ -1,0 +1,9 @@
+く
+Modules/Mathematics/Seq
+...
+1
+2
+3
+4
+def fibonacci(n)
+return n if (0..1 ). include? n (fibonacci(n - 1) + fibonacci(n
